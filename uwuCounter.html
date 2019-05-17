@@ -30,7 +30,7 @@
 		<b>uwu</b>
 	</div>
 	
-	<div class'uwu' id='counter'>
+	<div class='counter' id='counter'>
 		0
 	</div>
 </body>
@@ -38,17 +38,16 @@
 <script>
 	main();
 	
+	var counter = {};//get object from JSON
+	
 	async function main(){
 		var count = -1;//get number
 		var html = document.getElementbyId("counter");
 		for(var i;; i++){
-			//get number
-			printa(count,html);
+			await //button press;
+			counter.increment();
+			printa(html);
 			await sleep(500);
-		}
-		
-		function increment(){
-			count++;
 		}
 	}
 	
