@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+
+<head>
+	<title>
+		UWU Counter
+	</title>
+	
+	<style id='uStyle'>
+		.uwu{
+			color:white;
+			font:Arial;
+			font-size:5em;
+			text-align:center;
+			top:50%;
+		}
+	</style>
+	
+	
+			
+			
+</head>
+
+<body style="background-color:powder-blue">
+	
+	<div class='uwu' id='uwu'>
+		<b>uwu</b>
+	</div>
+	
+	<div class'uwu' id='counter'>
+		0
+	</div>
+</body>
+
+<script>
+	main();
+	
+	async function main(){
+		var count = -1;//get number
+		var html = document.getElementbyId("counter");
+		for(var i;; i++){
+			//get number
+			printa(count,html);
+			await sleep(500);
+		}
+		
+		function increment(){
+			count++;
+		}
+	}
+	
+	function printa(count,html){
+		html.innerHTML = count;
+		console.log("COUNTER UPDATED TO " + count);
+	}
+	
+	function sleep(ms){
+		return new Promise(resolve => setTimeout(resolve,ms));
+	}
+	
+</script>
