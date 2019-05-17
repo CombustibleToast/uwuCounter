@@ -35,10 +35,11 @@
 	</div>
 </body>
 
-<script>
-	main();
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js">
 	
-	var counter = {};//get object from JSON
+	var = $.getJSON("test.json", function(json){console.log(json);});
+	
+	main();
 	
 	async function main(){
 		var count = -1;//get number
