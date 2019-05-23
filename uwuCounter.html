@@ -31,19 +31,19 @@
 	</div>
 	
 	<div class='counter' id='counter'>
-		0
+		-1
 	</div>
 </body>
 
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js">
 	
-	var = $.getJSON("test.json", function(json){console.log(json);});
+	var counter = $.getJSON("test.json", function(json){console.log(json);});
 	
 	main();
 	
 	async function main(){
-		var count = -1;//get number
 		var html = document.getElementbyId("counter");
+		printa(html);
 		for(var i;; i++){
 			await //button press;
 			counter.increment();
@@ -52,9 +52,9 @@
 		}
 	}
 	
-	function printa(count,html){
-		html.innerHTML = count;
-		console.log("COUNTER UPDATED TO " + count);
+	function printa(html){
+		html.innerHTML = counter.count;
+		console.log("COUNTER UPDATED TO " + counter.count5);
 	}
 	
 	function sleep(ms){
