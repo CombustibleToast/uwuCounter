@@ -7,16 +7,45 @@
 	
 	<style id='uStyle'>
 		.uwu{
-			color:white;
-			font:Arial;
-			font-size:5em;
-			text-align:center;
-			top:50%;
+			color: white;
+			background-color: rgb(125, 163, 233);
+			border: 10px double rgb(125, 163, 233);
+			border-radius: 8px;
+			transition-duration: 1s;
+			-webkit-transition-duration: 0.4s;
+			cursor: pointer;
+			position: absolute;
+			margin: auto;
+			display: inline-block;
+
+			font-family: Arial;
+			font-size: 30em;
+			text-align: center;
+		}
+
+		.uwu:hover{
+			color: rgb(236, 236, 236);
+			border: 10px double white;
 		}
 	</style>
-	
-	<style id='buttonStyle'>
-		
+
+	<style id='number'>
+		.counter{
+			color: rgb(211, 211, 211);
+			font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+			font-size: 10em;
+			text-align: center;
+			display: inline-block;
+			position: absolute;
+			top: 70%;
+			left: 50%;
+		}
+	</style>
+
+	<style id='b'>
+		.body{
+			background-color:rgb(125, 163, 233);
+		}
 	</style>
 	
 	
@@ -24,25 +53,30 @@
 			
 </head>
 
-<body style="background-color:powder-blue">
+<body class='body'>
 	
-	<div class='uwu' id='uwu'>
+	<button class='uwu' id='uwu'>
 		<b>uwu</b>
-	</div>
+	</button>
 	
 	<div class='counter' id='counter'>
 		-1
 	</div>
+
+	<div class'button' id='button'></div>
+
 </body>
 
-<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js">
-	
-	var counter = $.getJSON("test.json", function(json){console.log(json);});
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+
+<script>
+	/*	
+	var counter = $.getJSON("counter.json", function(json){console.log(json);});
 	
 	main();
 	
 	async function main(){
-		var html = document.getElementbyId("counter");
+		var html = document.getElementById("counter");
 		printa(html);
 		for(var i;; i++){
 			await //button press;
@@ -60,5 +94,6 @@
 	function sleep(ms){
 		return new Promise(resolve => setTimeout(resolve,ms));
 	}
+	*/
 	
 </script>
